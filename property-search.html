@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Search Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman";
+            background-color: darkseagreen;
+            color: #000;
+        }
+    </style>
+</head>
+
+    <body>
+    <form method="post" action="https://www.elformo.com/forms/4f6ae3fc-3286-4696-ab49-1d6df0ac1aec">
+
+
+        <h3>Main Property Prefferences</h3>
+        <hr>
+        <h5>What type of property are you seeking?</h5>
+        <select name="PropType" id="PropType">
+            <option value="residential">Residential</option>
+            <option value="commercial">Commercial</option>
+            <option value="industrial">Industrial</option>
+            <option value="land">Land</option>
+        </select>
+        <br>
+        <h5>How many acres are you looking for?</h5>
+        <select name="acres" id="acres">
+            <option value="one">1 or less</option>
+            <option value="two">Between 1 & 5</option>
+            <option value="three">Between 5 & 15</option>
+            <option value="four">More than 20</option>
+        </select>
+        <hr>
+        <h3>Secondary Property Prefferences</h3>
+        <hr>
+        <label for="zip">
+            Zipcode:
+            <input type="text" id="zip" name="zip" placeholder="78210" required>
+        </label>
+        <br>
+        <br>
+        <label for="MinPrice">
+            Minimum Price:
+            <input type="text" id="MinPrice" name="MinPrice" placeholder="$10,000">
+        </label>
+        <label for="MaxPrice">
+            Maximum Price:
+            <input type="text" id="MaxPrice" name="MaxPrice" placeholder="$100,000">
+        </label>
+        <br>
+        <h5>How many bedrooms are you looking for?</h5>
+        <select name="bedroom" id="bedroom">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="plus">4 or more</option>
+        </select>
+        <h5>How many bathrooms are you looking for?</h5>
+        <select name="bathroom" id="bathroom">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="plus">4 or more</option>
+        </select>
+        <hr>
+        <button type="submit">Search Now!</button>
+    </form>
+    </body>
+
+</html>
