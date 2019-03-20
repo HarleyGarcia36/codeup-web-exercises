@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Form</title>
+    <style>
+        body{
+            background-color: lightsteelblue;
+        }
+        hr{
+            height: 3px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+    <body>
+    <form method="post" action="https://www.elformo.com/forms/4f6ae3fc-3286-4696-ab49-1d6df0ac1aec">
+        <img src="imgs/creditcards.png" height="10%" width="50%" alt="cards"><hr>
+        <h3>Card Information:</h3>
+        <hr>
+        <label for="ccnumber">
+            Credit card number:
+            <input type= text id="ccnumber" name="ccnumber" placeholder="####-####-####-####" required>
+        </label>
+        <br><br>
+        <label for="cardholder">
+            Card holder's name:
+            <input type="text" id="cardholder" placeholder="name on card" name="cardholder" required>
+        </label>
+        <br><br>
+        <label for="expdate">
+            Card experation date:
+            <input type="month" id="expdate" name="expdate" required>
+        </label>
+        <br><br>
+        <label for="security">
+            Security code:
+            <input type="password" placeholder="911" id="security" name="security" required>
+            <small>(Three digit number on the back of your card)</small>
+        </label>
+        <hr>
+        <h3>Billing Information:</h3>
+        <hr>
+        <label for="firstname">
+            First name:
+            <input type="text" id="firstname" placeholder="your first name" name="firstname" required>
+        </label>
+        <label for="lastname">
+            Last name:
+            <input type="text" id="lastname" placeholder="your last name" name="lastname" required>
+        </label>
+        <br><br>
+        <label for="address">
+            Home Address:
+            <input type="text" id="address" placeholder="1111 Macro St." name="address" required>
+        </label>
+        <br><br>
+        <label for="zip">
+            Zipcode:
+            <input type="number" id="zip" placeholder="78210" name="zip" required>
+        </label>
+        <br><br>
+        <label for="state">
+            State:
+            <input type="text" id="state" placeholder="Tx" name="state" required>
+        </label>
+        <br><br>
+        <label for="saveinfo">
+            Keep this credit card on file for future transactions.
+            <input type="checkbox" value="true" id="saveinfo" name="saveinfo">
+        </label>
+        <br>
+        <hr>
+        <button type="submit">Buy Now!</button>
+    </form>
+    </body>
+</html>
