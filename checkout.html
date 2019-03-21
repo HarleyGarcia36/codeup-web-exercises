@@ -6,17 +6,26 @@
     <style>
         body{
             background-color: lightsteelblue;
+            font-family: Arial;
         }
         hr{
-            height: 3px;
+            height: 2px;
             background-color: darkblue;
+            border: transparent;
+        }
+        button{
+            background-color: lawngreen;
+            border: black;
+            height: 40px;
+            width: 80px;
+            font-size: medium;
         }
     </style>
 </head>
 
     <body>
     <form method="post" action="https://www.elformo.com/forms/4f6ae3fc-3286-4696-ab49-1d6df0ac1aec">
-        <img src="imgs/creditcards.png" height="10%" width="50%" alt="cards"><hr>
+        <img src="imgs/creditcards.png" height="10%" width="30%" alt="cards"><hr>
         <h3>Card Information:</h3>
         <hr>
         <label for="ccnumber">
@@ -36,7 +45,7 @@
         <br><br>
         <label for="security">
             Security code:
-            <input type="password" placeholder="911" id="security" name="security" required>
+            <input type="password" placeholder="911" id="security" maxlength="3" name="security" required>
             <small>(Three digit number on the back of your card)</small>
         </label>
         <hr>
