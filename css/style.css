@@ -1,4 +1,78 @@
-.fancy-header {
-    color: purple;
+body{
+    background-image: url("../imgs/white-waves.png");
+    font-family: Futura;
+    color: #413e54a3;
+    text-align: center;
+}
+
+h2{
+    color: #675f98;
     text-decoration: underline;
+}
+hr{
+    border: 3px solid#675f98;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    padding-left: 0%;
+}
+
+ol{
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0%;
+}
+
+td{
+    border: 4px;
+    border-color: black;
+}
+
+a:link{
+    color: steelblue;
+}
+
+a:hover{
+    color: darkblue;
+}
+
+a:visited{
+    color: lightslategrey;
+}
+th{
+    font-size: 1.2em;
+}
+
+table{
+    alignment: center;
+    border: 3px solid #675f98;
+    border-collapse: collapse;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+td{
+    border-collapse: collapse;
+    border: 1px solid lightslategrey;
+}
+img{
+    width: 35%;
+    height: 35%;
+    opacity: 0.5;
+}
+img:hover{
+    opacity: 1.0;
+}
+
+.main-header {
+    text-align: center;
+    text-decoration: underline;
+    color: #675f98;
+}
+
+.secondary-header{
+    text-align: center;
 }
