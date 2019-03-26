@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    padding: 2em;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.column.one-half{
+    /*background-color: lightgray;
+    border: 1px solid black;*/
+    width: 50%;
+}
+
+.column.one-third{
+   /* background-color: lightgray;
+    border: 1px solid black;*/
+    width: 33.33%;
+}
+
+.column.one-fourth{
+    width: 25%;
+}
+
+.column.one-eighth{
+    width: 12.5%;
+}
