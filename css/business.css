@@ -29,7 +29,7 @@ p{
     width: 50px;
     position: fixed;
     top: 40px;
-    right: 25px;
+    right: 30px;
 }
 
 .main-header{
@@ -75,6 +75,7 @@ p{
 }
 
 .organic-matter{
+    position: relative;
     background-color: cornsilk;
     border: 1px solid dodgerblue;
     border-radius: 10%;
@@ -88,4 +89,36 @@ p{
     margin-bottom: 10px;
     background-color: transparent;
     text-decoration: underline;
+}
+
+.om-image{
+    position: absolute;
+    right: -305px;
+    top: 80px;
+    height: 450px;
+    width: 300px;
+}
+
+.om-table{
+    position: absolute;
+    left: -265px;
+    top: 80px;
+    height: 450px;
+    width: 260px;
+}
+
+.bottompage{
+    list-style: none;
+}
+
+.bottemleft{
+    float: left;
+}
+
+.bottomcenter{
+
+}
+
+.bottemright{
+    float: right;
 }
