@@ -7,9 +7,33 @@
     <link rel="stylesheet" href="css/pizza.css">
 </head>
     <body>
-
-        <nav class="navbar-expand{-sm|-md|-lg|-xl} m-0 p-0">
-            <ul class="nav nav-pills nav-fill">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Order online <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                        <input class="form-control" type="text" placeholder="Zip code">
+                </li>
+                <li class="nav-item">
+                    <button class="form-control" type="submit">Search stores near you</button>
+                </li>
+            </ul>
+            <span class="navbar-text">
+      Sign up
+    </span>
+        </div>
+    </nav>
+        <!--<nav class="navbar-expand{-sm|-md|-lg|-xl} m-0 p-0">
+        &lt;!&ndash;    <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
                     <a class="nav-link" href="">Pizza world</a>
                 </li>
@@ -29,7 +53,7 @@
                     <a class="nav-link" href="">Sign up</a>
                 </li>
             </ul>
-        </nav>
+        </nav>&ndash;&gt;-->
 
         <div class="container">
             <div class="jumbotron jumbotron-fluid d-sm-none d-md-block">
@@ -39,13 +63,13 @@
             <h2>Build your own pizza!</h2>
             <hr>
             <ul class="nav nav-tabs">
-                <li class="nav-item">
+                <li class="nav-item nav-tabs">
                     <a class="nav-link active" href=""><span class="badge badge-dark">1</span> Size and crust</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-tabs">
                     <a class="nav-link" href=""><span class="badge badge-dark">2</span> Cheese and sauce</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-tabs">
                     <a class="nav-link" href=""><span class="badge badge-dark">3</span> Toppings</a>
                 </li>
             </ul>
@@ -71,8 +95,8 @@
                         <label for="medium2"><input name="sizethin" id="medium2" type="radio"> Medium (12")</label></li>
                     <li class="list-group-item">
                         <label for="large"><input name="sizethin" id="large" type="radio"> Large (14")</label></li>
-                    <li class="card-header">
-                        <button class="next-step" type="submit">Next Step ></button>
+                    <li class="card-footer text-right">
+                        <button class="btn btn-primary btn-sm" type="submit">Next Step ></button>
                     </li>
                 </ul>
                 </div>
@@ -116,9 +140,9 @@
                                     <option value="extra">Extra</option>
                                 </select>
                             </li>
-                            <li class="card-header btn-group">
-                                <button class="btn btn-secondary" type="submit">< Previous Step</button>
-                                <button class="btn btn-secondary" type="submit">Next Step ></button>
+                            <li class="card-footer text-right">
+                                <button class="btn btn-primary btn-sm" type="submit">< Previous Step</button>
+                                <button class="btn btn-primary btn-sm" type="submit">Next Step ></button>
                             </li>
                         </ul>
                     </div>
@@ -126,7 +150,7 @@
                     <br>
                     <div class="card">
                         <div class="card-body bg-primary text-white">
-                            Choose size and crust
+                            Choose Toppings
                         </div>
                         <div class="card choices">
                             <ul class="list-group list-group-flush">
@@ -170,26 +194,14 @@
                                     <label for="jalepeno">
                                         <input type="checkbox" id="jalepeno" name="non-meats"> Jalepeno Penon-meats
                                     </label></li>
-                                <li class="card-header">
-                                    <button class="next-step" type="submit">Checkout</button>
+                                <li class="card-footer text-right">
+                                    <button class="btn btn-primary btn-sm" type="submit">Checkout</button>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
+            </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
