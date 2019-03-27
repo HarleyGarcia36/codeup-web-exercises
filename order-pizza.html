@@ -37,28 +37,146 @@
             </div>
 
             <h2>Build your own pizza!</h2>
+            <hr>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href=""><span class="badge badge-dark">1</span>Size and crust</a>
+                    <a class="nav-link active" href=""><span class="badge badge-dark">1</span> Size and crust</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=""><span class="badge badge-dark">2</span>Cheese and sauce</a>
+                    <a class="nav-link" href=""><span class="badge badge-dark">2</span> Cheese and sauce</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=""><span class="badge badge-dark">3</span>Toppings</a>
+                    <a class="nav-link" href=""><span class="badge badge-dark">3</span> Toppings</a>
                 </li>
             </ul>
             <div class="card">
-                <div class="card-body">
+                <div class="card-body bg-primary text-white">
                    Choose size and crust
                 </div>
+                <div class="card choices">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Hand Tossed</li>
+                    <li class="card-header">Hand Tossed</li>
                     <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
-                    <li class="list-group-item"><input type="radio"> Small (10")</li>
-                    <li class="list-group-item"></li>
+                    <li class="list-group-item">
+                        <label for="small"><input name="size" id="small" type="radio"> Small (10")</label></li>
+                    <li class="list-group-item">
+                        <label for="medium"><input name="size" id="medium" type="radio"> Medium (12")</label></li>
                 </ul>
+                </div>
+                <div class="card choices">
+                <ul class="list-group list-group-flush">
+                    <li class="card-header">Crispy Thin</li>
+                    <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio</li>
+                    <li class="list-group-item">
+                        <label for="medium2"><input name="sizethin" id="medium2" type="radio"> Medium (12")</label></li>
+                    <li class="list-group-item">
+                        <label for="large"><input name="sizethin" id="large" type="radio"> Large (14")</label></li>
+                    <li class="card-header">
+                        <button class="next-step" type="submit">Next Step ></button>
+                    </li>
+                </ul>
+                </div>
             </div>
+            <br>
+                <div class="card">
+                    <div class="card-body bg-primary text-white">
+                        Choose Cheese and Sauce
+                    </div>
+                    <div class="card choices">
+                        <ul class="list-group list-group-flush">
+                            <li class="card-header">Cheese</li>
+                            <li class="list-group-item">How Much?
+                                <br>
+                                <select name="cheese" id="cheese">
+                                    <option value="light">Light</option>
+                                    <option value="normal">Normal</option>
+                                    <option value="extra">Extra</option>
+                                    <option value="double">Double</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card choices">
+                        <ul class="list-group list-group-flush">
+                            <li class="card-header">Sauce</li>
+                            <li class="list-group-item">What Type?
+                                <br>
+                                <select name="type" id="type">
+                                    <option value="tomato">Tomato sauce</option>
+                                    <option value="normal">Marinara sacue</option>
+                                    <option value="bbq">BBQ sauce</option>
+                                    <option value="alfredo">Alfredo sauce</option>
+                                </select>
+                            </li>
+                            <li class="list-group-item">How Much?
+                                <br>
+                                <select name="much" id="much">
+                                    <option value="light">Light</option>
+                                    <option value="normal">Normal</option>
+                                    <option value="extra">Extra</option>
+                                </select>
+                            </li>
+                            <li class="card-header btn-group">
+                                <button class="btn btn-secondary" type="submit">< Previous Step</button>
+                                <button class="btn btn-secondary" type="submit">Next Step ></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body bg-primary text-white">
+                            Choose size and crust
+                        </div>
+                        <div class="card choices">
+                            <ul class="list-group list-group-flush">
+                                <li class="card-header">Choose Meates</li>
+                                <li class="list-group-item">
+                                    <label for="beef">
+                                    <input type="checkbox" id="beef" name="meats"> Beef
+                                    </label></li>
+
+                                 <li class="list-group-item">
+                                     <label for="ham">
+                                        <input type="checkbox" id="ham" name="meats"> Ham
+                                     </label></li>
+                                  <li class="list-group-item">
+                                    <label for="philly">
+                                        <input type="checkbox" id="philly" name="meats"> Philly Steak
+                                    </label></li>
+                                  <li class="list-group-item">
+                                    <label for="bacon">
+                                        <input type="checkbox" id="bacon" name="meats"> Bacon
+                                    </label></li>
+                            </ul>
+                        </div>
+                        <div class="card choices">
+                            <ul class="list-group list-group-flush">
+                                    <li class="card-header">Choose Non-Meats</li>
+                                <li class="list-group-item">
+                                    <label for="green">
+                                        <input type="checkbox" id="green" name="non-meats"> Green Peppers
+                                    </label></li>
+
+                                <li class="list-group-item">
+                                    <label for="mush">
+                                        <input type="checkbox" id="mush" name="non-meats"> Mushrooms
+                                    </label></li>
+                                <li class="list-group-item">
+                                    <label for="onion">
+                                        <input type="checkbox" id="onion" name="non-meats"> Onions
+                                    </label></li>
+                                <li class="list-group-item">
+                                    <label for="jalepeno">
+                                        <input type="checkbox" id="jalepeno" name="non-meats"> Jalepeno Penon-meats
+                                    </label></li>
+                                <li class="card-header">
+                                    <button class="next-step" type="submit">Checkout</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
 
 
