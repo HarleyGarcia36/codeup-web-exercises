@@ -1,0 +1,51 @@
+nav{
+    background-color: lightgray;
+    border-top: 1px solid black;
+    height: 3em;
+}
+
+li.nav-item{
+    padding-left: 2%;
+}
+
+
+button.nav-link{
+    background-color: #FFFFFF;
+    border: 1px solid black;
+}
+
+.nav-fill .nav-item{
+    flex: 1 1 auto;
+}
+
+.nav-item{
+    display: inline-block;
+    float: left;
+    text-align: left;
+    padding-left: .2em;
+}
+
+.nav-link{
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+    color: grey;
+    width: border-box;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #69696924;
+    height: 3em;
+    color: grey;
+}
+
+.justify-content-end{
+    /*float: right;*/
+    /*padding-left: 10%;*/
+}
+
+/*
+ul{
+    background-color: transparent;
+}*/

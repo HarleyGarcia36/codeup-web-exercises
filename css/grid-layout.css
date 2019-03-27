@@ -14,14 +14,10 @@
 }
 
 .column.one-half{
-    /*background-color: lightgray;
-    border: 1px solid black;*/
     width: 50%;
 }
 
 .column.one-third{
-   /* background-color: lightgray;
-    border: 1px solid black;*/
     width: 33.33%;
 }
 
@@ -32,3 +28,13 @@
 .column.one-eighth{
     width: 12.5%;
 }
+
+.column.two-third{
+    width: 66.66%;
+}
+
+.column.three-eighth{
+    width: 33.33%;
+}
+
+.column.two-fourth
