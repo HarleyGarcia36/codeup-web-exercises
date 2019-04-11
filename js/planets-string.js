@@ -20,8 +20,8 @@
      * results. Why might this be useful?
      */
 
-     var planetsString = 'Mercury'<br>'Venus'<br>'Earth'<br>'Mars'<br>'Jupiter'<br>'Saturn'<br>'Uranus'<br>'Neptune';
-    console.log(planetsString);
+    // var planetsString = 'Mercury'<br>'Venus'<br>'Earth'<br>'Mars'<br>'Jupiter'<br>'Saturn'<br>'Uranus'<br>'Neptune';
+    // console.log(planetsString);
 
     /**
      * BONUS:
