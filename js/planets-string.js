@@ -1,8 +1,7 @@
 (function(){
     "use strict";
 
-    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    var planetsArray;
+    // var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
 
     /**
      * TODO:
@@ -11,13 +10,20 @@
      * console.log planetsArray to check your work
      */
 
+    // var planetsArray = planetsString.split(',');
+
     // console.log(planetsArray);
 
     /**
      * TODO:
      * Create a string with <br> tags between each planet. console.log() your
      * results. Why might this be useful?
-     *
+     */
+
+     var planetsString = 'Mercury'<br>'Venus'<br>'Earth'<br>'Mars'<br>'Jupiter'<br>'Saturn'<br>'Uranus'<br>'Neptune';
+    console.log(planetsString);
+
+    /**
      * BONUS:
      * Create another string that would display your planets in an undordered
      * list. You will need an opening AND closing <ul> tags around the entire
