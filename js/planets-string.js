@@ -1,7 +1,7 @@
 (function(){
     "use strict";
 
-    // var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
 
     /**
      * TODO:
@@ -10,9 +10,9 @@
      * console.log planetsArray to check your work
      */
 
-    // var planetsArray = planetsString.split(',');
+    var planetsArray = planetsString.split(',');
 
-    // console.log(planetsArray);
+    console.log(planetsArray);
 
     /**
      * TODO:
@@ -20,8 +20,13 @@
      * results. Why might this be useful?
      */
 
-    // var planetsString = 'Mercury'<br>'Venus'<br>'Earth'<br>'Mars'<br>'Jupiter'<br>'Saturn'<br>'Uranus'<br>'Neptune';
-    // console.log(planetsString);
+    var planetsBr = planetsArray.join("<br>");
+
+    console.log(planetsBr);
+
+    var planetsList = "<li>" + planetsArray.join("</li> <li>" ) + "</li>";
+
+    console.log(planetsList);
 
     /**
      * BONUS:
