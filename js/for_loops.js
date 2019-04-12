@@ -6,6 +6,7 @@ function showMultiplicationTable(num){
 }
 showMultiplicationTable(7);
 
+
 for(var i=0;i<10;i++) {
     var randomNum = Math.floor(Math.random() * 50) + 50;
     console.log(randomNum + " is " + (randomNum%2?"odd":"even"));

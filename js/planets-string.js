@@ -20,6 +20,7 @@
      * results. Why might this be useful?
      */
 
+
     var planetsBr = planetsArray.join("<br>");
 
     console.log(planetsBr);
