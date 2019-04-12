@@ -30,6 +30,11 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
+    person.sayHello = function(){
+        return "Hello from "+this.firstname+" "+this.lastname;
+    };
+    console.log(person.sayHello());
+
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -49,6 +54,18 @@
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
+    function needToPay(customer){
+        if(customer.amount > 200){
+            customer.afterDiscount=customer.amount*.88;
+            console.log(customer.name + " will get a 12% discount. From "+customer.amount + " to $" + customer.afterDiscount);
+        }else{
+            console.log(customer.name + " will not get a discount, and will have to pay full price at $"+customer.amount);
+
+        }
+    }
+    shoppers.forEach(function(shopper){
+        needToPay(shopper);
+    });
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -62,6 +79,14 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books=[
+        {"title":"The Holy Bible","author":{"firstName":"Jesus","lastName":"Christ"}},
+        {"title":"Fahrenheit 451","author":{"firstName":"Ray","lastName":"Bradbury"}},
+        {"title":"A Child Called It","author":{"firstName":"Dave","lastName":"Pelzer"}},
+        {"title":"The Lion, the Witch and the Wardrobe","author":{"firstName":"Rider","lastName":"Haggard"}},
+        {"title":"Watership Down","author":{"firstName":"Richard","lastName":"Adams"}}
+    ];
 
     /**
      * TODO:
@@ -87,6 +112,12 @@
      *      ---
      *      ...
      */
+
+    books.forEach(function(book){
+        console.log("Book #"+(books.indexOf(book)+1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    });
 
     /**
      * Bonus:
