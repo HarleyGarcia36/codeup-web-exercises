@@ -25,29 +25,66 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button id="js-is-cool" type="submit">JavaScript is Cool</button>
+<button id="blue-sub" type="submit">Change sub header blue</button>
+<button id="list-change" type="submit">Change the bullet list</button>
+<button id="mission-a" type="submit">Mission Accomplished!</button>
 <script>
     (function() {
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
-        // var mainHeader = ;
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        // TODO: Uncomment the next line and get the sub header element by id
-        // var subHeader = ;
+        //JavaScript is Cool
+        var jsIsCool = document.getElementById('js-is-cool');
 
-        // TODO: Set the text color of subHeader to blue
+        function jsCool(event) {
+        var mainHeader = document.getElementById('main-header');
+            mainHeader.innerHTML = "JavaScript is Cool";
+        }
 
-        // TODO: Uncomment the next line and get all list items
-        // var listItems = ;
+        jsIsCool.addEventListener('click', jsCool ,false);
 
-        // TODO: Set text color on every other list item to grey
-        // TODO: Set text color of li with dbid = 1 to blue
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // var subParagraphs = ;
+        //change sub blue
+        var subIsBlue = document.getElementById('blue-sub');
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        function blueSub(event) {
+        var subHeader = document.getElementById('sub-header');
+        subHeader.style.color = 'blue';
+        }
+
+        subIsBlue.addEventListener('click', blueSub, false);
+
+
+        //change list item
+        var changeTheList = document.getElementById('list-change');
+
+        function changeList(event) {
+            var listItems = document.getElementsByTagName('li');
+            for (var i = 0; listItems.length > i; i++) {
+                var dbid = listItems[i].getAttribute('data-dbid');
+                if (dbid == 1) {
+                    listItems[i].style.color = "blue";
+                } else if (dbid % 2 === 0) {
+                    listItems[i].style.color = "grey";
+                }
+            }
+        }
+
+        changeTheList.addEventListener('click', changeList, false);
+
+
+        // change sub paragraph
+        var changeP = document.getElementById('mission-a');
+
+        function missionA(event) {
+            var subParagraphs = document.getElementsByClassName('sub-paragraph');
+            subParagraphs[0].innerText = "Mission Accomplished!";
+        }
+
+        changeP.addEventListener('click', missionA, false);
+
+
     })();
 </script>
 </body>
