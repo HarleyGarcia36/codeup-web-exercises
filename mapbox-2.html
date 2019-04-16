@@ -2,15 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mapbox Hometown</title>
+    <title>Mapbox Markers</title>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
-
 </head>
-<body>
-
-
+    <body>
     <!--Header-->
-    <h1 style="text-align: center">Mapbox Home</h1>
+    <h1 style="text-align: center">Mapbox Markers</h1>
     <!--The Map-->
     <div id='map' style='width: 80%; margin: 0 auto; height: 70vh;'></div>
 
@@ -25,20 +22,13 @@
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v9',
-            center: [-98.9053, 29.1400],
-            zoom: 14
+            center: [-77.0369, 38.9072],
+            zoom: 12
         });
 
-
-        var delay = 5000;
-
-        setTimeout(function  () {
-        map.setZoom(2);
-        map.setStyle('mapbox://styles/mapbox/satellite-v9')
-
-        }, delay);
+        var lincoln = new mapboxgl.Marker()
+            .setLngLat([-77.0502, 38.8893])
+            .addTo(map);
     </script>
-
-
 </body>
 </html>
