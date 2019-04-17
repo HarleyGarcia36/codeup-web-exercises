@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox API</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body{
+            background-color: #E6ECF0;
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <h1 style="text-align: center">Mapbox API</h1>
+    <!--The Map-->
+    <div id='map' style='width: 80%; border: 1px solid black; margin: 0 auto; height: 80vh;'></div>
+    <!--Zoom buttons-->
+    <button id="zoom-in" type="submit">+</button>
+    <button id="zoom-out" type="submit">-</button>
+
+    <!--Js-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+
+    <script src="js/keys.js"></script>
+    <script src="js/mapbox-geocoder-utils.js"></script>
+
+    <script>
+        mapboxgl.accessToken = mapboxKey;
+        //default map
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v9',
+            center: [-98.4916, 29.4252],
+            zoom: 5
+        });
+        //array of favorite restaurants
+        var favRestaurants = [
+                {
+                    name: "Don Pedro",
+                    address: '1526 SW Military Dr, San Antonio, TX 78221',
+                    popupHTML: "<p>Don Pedro</p>"
+                },
+                {
+                    name:"Shoney's",
+                    address:"8206 Highway 35 North, San Antonio, TX 78239",
+                    popupHTML:"<p>Shoney's</p>"
+                },
+                {
+                    name:"Railhead Cafe",
+                    address:"15115 Main St, Lytle, TX 78052\n",
+                    popupHTML:"<p>Railhead Cafe</p>"
+                }
+        ];
+
+
+        function placeMarkerAndPopup(info, token, map) {
+            geocode(info.address, mapboxKey).then(function (result) {
+                var popup = new mapboxgl.Popup()
+                    .setHTML(info.popupHTML);
+                var marker = new mapboxgl.Marker()
+                    .setLngLat(result)
+                    .addTo(map)
+                    .setPopup(popup);
+            });
+        }
+
+        for (var i = 0; i < favRestaurants.length; i ++) {
+        placeMarkerAndPopup(favRestaurants[i], mapboxKey, map);}
+
+    </script>
+</body>
+</html>
