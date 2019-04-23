@@ -22,11 +22,11 @@
 
 //exercise 3(JQuery mouse events):
 $('h1').click(function () {
-    $('h1').css('background-color','#00ff00')
+    $(this).css('background-color','#00ff00')
 });
 
 $('p').dblclick(function () {
-    $('p').css('font-size', '18px')
+    $(this).css('font-size', '18px')
 });
 
 $('li').hover(function() {
@@ -34,9 +34,6 @@ $('li').hover(function() {
 }, function() {
     $(this).css('color', 'black');
 });
-
-
-
 
 
 
@@ -58,3 +55,11 @@ $('li').hover(function() {
 // jQuery('#welcome-header').html('<h2>Huhhhh</h2>');
 
 // jQuery('h2').css('color', '#00ff00');
+
+// $('h3').click(function () {
+//    $('h3').html('<h1>THIS IS NOT A DRILL</h1>')
+// });
+
+// $('h3').dblclick(function () {
+//     $('h3').css('background-color', '#ffef6d')
+// });

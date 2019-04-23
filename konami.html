@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+
+    $(document).keydown(function(e){
+        console.log(e.key);
+    });
+
+    function onKonamiCode(kon) {
+        var input = '';
+        var key = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
+        document.addEventListener('keydown', function (e) {
+            input += ("" + e.key);
+            if (input === key) {
+                return kon();
+            }
+            if (!key.indexOf(input)) return;
+            input = ("" + e.key);
+        });
+    }
+
+    onKonamiCode(function () {alert("Save data completely deleted (u.u)")})
+
+
+</script>
+</body>
+</html>
