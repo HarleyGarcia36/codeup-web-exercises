@@ -1,23 +1,43 @@
-//exercise1:
+//exercise 1(Intro to JQuery):
 // $(alert('The DOM has finished loading'));
 
 
-//exercise2:
+//exercise 2(JQuery selectors):
 // var contents = $('#welcome-header').html();
 // alert(contents);
 
-$('.codeup').css('border', '1px solid red');
+// $('.codeup').css('border', '1px solid red');
 
-$('li').css('font-size', '20px');
+// $('li').css('font-size', '20px');
 
 // $('h1').css('background', 'blue');
 // $('p').css('background', 'blue');
 // $('li').css('background', 'blue');
 
-var contents = $('h1').html();
-alert(contents);
+// var contents = $('h1').html();
+// alert(contents);
 
-$('h1, p, li').css('background', '#007bfc');
+// $('h1, p, li').css('background', '#007bfc');
+
+
+//exercise 3(JQuery mouse events):
+$('h1').click(function () {
+    $('h1').css('background-color','#00ff00')
+});
+
+$('p').dblclick(function () {
+    $('p').css('font-size', '18px')
+});
+
+$('li').hover(function() {
+    $(this).css('color', 'red');
+}, function() {
+    $(this).css('color', 'black');
+});
+
+
+
+
 
 
 //practice:
