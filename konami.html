@@ -14,20 +14,20 @@
         console.log(e.key);
     });
 
-    function onKonamiCode(kon) {
+    function KonamiCode(konami) {
         var input = '';
-        var key = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
-        document.addEventListener('keydown', function (e) {
-            input += ("" + e.key);
-            if (input === key) {
-                return kon();
-            }
-            if (!key.indexOf(input)) return;
-            input = ("" + e.key);
-        });
-    }
+            var key = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
+            document.addEventListener('keydown', function (e) {
+                input += ("" + e.key);
+                if (input === key) {
+                return konami();
+                }
+                if (!key.indexOf(input)) return;
+                input = ("" + e.key);
+            });
+        }
 
-    onKonamiCode(function () {alert("Save data completely deleted (u.u)")})
+    KonamiCode(function () {alert("Save data completely deleted (u.u)")})
 
 
 </script>
