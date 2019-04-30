@@ -25,11 +25,32 @@
 (function() {
     "use strict";
     // TODO: Create an ajax GET request for /data/inventory.json
-
     // TODO: Take the data from inventory.json and append it to the products table
-    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-    //             its contents and fields
-    //       HINT: You will want to target #insertProducts for your new HTML elements
+
+    function ordersHtml(data) {
+        var html = '';
+
+        data.forEach(function(data) {
+            html += '<tr>';
+            html += '<td>' + data.title + '</td>';
+            html += '<td>' + data.quantity + '</td>';
+            html += '<td>' + '$' + data.price + '</td>';
+            html += '<td>' + data.categories + '</td>';
+            html += '</tr>';
+        });
+
+        return html;
+    }
+    var toolStock = $.ajax('data/inventory.json');
+    toolStock.done(function(data){
+
+
+    $('#insertProducts').html(ordersHtml(data));
+    }).fail(function(){
+        alert('Error, check console');
+        console.log("Failed TO LOAD");
+    });
+
 })();
 </script>
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Blog</title>
+</head>
+<body>
+    <h3>Ajax Blog</h3>
+    <div id="post"></div>
+
+
+<script src="js/jquery-2.2.4.js"></script>
+
+    <script>
+        (function() {
+            "use strict";
+            function blogPost(data) {
+                var html = '';
+                data.forEach(function(data) {
+                    html += '<div>';
+                    html += '<h1>' + data.title + '</h1>';
+                    html += '<p class="date">' + 'Date: ' + data.date + '</p>';
+                    html += '<p class="subject">' + 'Subject: ' + data.categories + '</p>';
+                    html += '<p class="content">' + data.content + '</p>';
+                    html += '</div>';
+                });
+                return html;
+            }
+
+
+            var content = $.ajax('data/blog.json');
+            content.done(function(data){
+                $('#post').html(blogPost(data));
+            }).fail(function(){
+                alert('Error, check console');
+                console.log("Failed TO LOAD");
+            }).always(function () {
+                console.log('only lames check the console')
+            });
+        })();
+    </script>
+
+</body>
+</html>
