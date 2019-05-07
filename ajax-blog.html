@@ -14,7 +14,7 @@
     <script>
         (function() {
             "use strict";
-            function blogPost(data) {
+            function blog(data) {
                 var html = '';
                 data.forEach(function(data) {
                     html += '<div>';
@@ -30,7 +30,7 @@
 
             var content = $.ajax('data/blog.json');
             content.done(function(data){
-                $('#post').html(blogPost(data));
+                $('#post').html(blog(data));
             }).fail(function(){
                 alert('Error, check console');
                 console.log("Failed TO LOAD");
