@@ -2,62 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JQuery Essential Methods</title>
+    <title>jQuery FAQ</title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+        .highlight {
+            background-color: pink;
+        }
+        li {
+            display: none;
+        }
+        h2 {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+<div id="newsletter-cta">
+    <h1>WOULD YOU LIKE TO SIGN UP FOR OUR NEWSLETTER?!</h1>
+    <p>
+        Monocle ipsum dolor sit amet craftsmanship eclectic uniforms Melbourne intricate carefully curated. Premium vibrant Melbourne hub charming Asia-Pacific emerging Zürich elegant. Elegant pintxos delightful, perfect tote bag impeccable bespoke Lufthansa global Gaggenau charming. Cutting-edge Ettinger elegant, hub Helsinki signature craftsmanship handsome St Moritz.
+        <br><br>
+        Click <span id="x">X</span> to close.
+    </p>
+</div>
+<h2>Be sure to register for more functionality and nature facts!</h2>
+<h1>Olympic National Park FAQ</h1>
+<button id="toggle">View All</button>
+<dl>
+    <dt>Do I need to make reservations to visit Olympic National Park?</dt>
+    <dd class="invisible">No, you don't need reservations to visit Olympic National Park. However, if you plan to spend
+        the
+        night in
+        or around the park, you should have reservations for lodging, camping, or backpacking.</dd>
+    <hr>
+    <dt>How do I get to Olympic National Park?</dt>
+    <dd class="invisible">You can find driving directions on the Directions and Transportation page.</dd>
+    <hr>
+    <dt>What is there to see and do in Olympic National Park?</dt>
+    <dd class="invisible">Explore our Things to Do page to find the perfect activities for your visit!</dd>
+    <hr>
+    <dt>When is the best time of year to visit Olympic National Park?</dt>
+    <dd class="invisible">It depends what you're looking for! While most people visit during summer, there are unique
+        things
+        things to
+        see when visiting at other times throughout the year. You can find more information on our Plan Your Visit page.</dd>
+    <hr>
+    <dt>Washington State law does not require motorists to carry tire chains over the major
+        mountain passes – why is it different here?</dt>
+    <dd class="invisible">During extreme weather conditions, Washington state does require chains, even
+        on all-wheel and four-wheel drive vehicles, as noted above.
+        In addition, Hurricane Ridge is unlike Washington’s mountain passes in a variety
+        of ways. At 5,242 feet above sea level Hurricane Ridge is significantly higher in
+        elevation than most of Washington’s road-accessible passes and is located on a
+        mountain summit, rather than in a more sheltered pass. Further, the Hurricane
+        Ridge Road is a park access road and not intended to be as wide or have as many
+        safety pullouts as a state highway. </dd>
+    <hr>
+    <dt>Is there an entrance fee to get into the park?</dt>
+    <dd class="invisible">Yes, there is a small entrance fee of $30.00 per vehicle for a 7 day pass, $25.00 per
+        motorcycle
+        for a
+        7 day
+        pass, and $15.00 per person (hikers, bicyclists or pedestrians. Youth 15 and under are admitted free of charge).</dd>
+    <hr>
+    <dt>What type of terrain can I expect when visiting Olympic Park?</dt>
+    <dd class="invisible">The diverse terrain at Olympic National Park contains jagged mountains, glaciers, lush rain
+        forests, and
+        beaches that are covered with driftwood.  This is a park where you can experience several types of vacations in one!</dd>
+    <hr>
+    <dt>What are some popular activities at Olympic?</dt>
+    <dd class="invisible">Nature lover’s come here to hike, bike, and take photographs.  Other activities include
+        boating,
+        fishing,
+        and water sports.</dd>
+    <hr>
+    <dt>What is the weather at Olympic National Park like?</dt>
+    <dd class="invisible">Because of this remarkably diverse landscape, climatic changes within the park are abrupt.
+        The
+        western
+        side
+        of the park has the wettest weather in the United States, averaging nearly 12 to 14 feet of precipitation each year. The eastern side of the park, which lies in the rain shadow of the mountains, is the driest area on the Pacific Coast north of Los Angeles.</dd>
+    <hr>
+    <dt>Question not on this list?</dt>
+    <dd class="invisible">Do you have a question that's not answered here? Send us an e-mail and we'll consider
+        adding it
+        to
+        this
+        list.</dd>
+</dl>
 
-    <div>
-        <h1>Would you like to sign up for our newsletter?</h1>
-        <span>X</span>
-    </div>
+<hr>
 
-    <h2 class="hidden register" style="display: none">Please register to continue viewing this site.</h2>
+<h3>Sequoia National Park</h3>
+<ul>
+    <li>Sequoia was the first park created to protect a living organism.</li>
+    <li>Before Kings Canyon, there was General Grant National Park.</li>
+    <li>Fire and proactive forest management play a unique role in the parks.</li>
+    <li>Sequoia is home to the tallest mountain in the lower 48.</li>
+</ul>
 
-    <!--<h3>National Park FAQ's</h3>-->
-    <!--<dl>-->
-        <!--<dt>Who is the director of the National Park Service?</dt>-->
-        <!--<dd class="invisible">Dan Smith is the deputy director exercising the authority of director for the National Park Service.</dd>-->
+<h3>Yosemite National Park</h3>
+<ul>
+    <li>Yosemite might be our nation’s 3rd national park, but it sparked the idea of national parks.</li>
+    <li>Yosemite’s granite rock formations glow like fire at sunset.</li>
+    <li>The park’s diverse landscape supports more than 400 species.</li>
+    <li>Yosemite is home to one of the tallest waterfalls in the world.</li>
+</ul>
 
-        <!--<dt>What government agency oversees the National Park Service?</dt>-->
-        <!--<dd class="invisible">The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.</dd>-->
+<h3>Zion National Park</h3>
+<ul>
+    <li>Before it was a national park, Zion was a national monument, and it’s name wasn’t Zion.</li>
+    <li>Zion is home to one of the greatest engineering feats of modern times.</li>
+    <li>Zion is more than just slot canyons and amazing hikes -- it also protects archeological sites.</li>
+    <li>Zion’s Angels Landing provides spectacular views, but it’s one of the world’s most dangerous.</li>
+</ul>
 
-        <!--<dt>How many employees are in the National Park Service?</dt>-->
-        <!--<dd class="invisible">Permanent, temporary, and seasonal employees: More than 20,000</dd>-->
+<button id="last-thing">Last Thing</button>
 
-        <!--<dt>How old is the National Park System?</dt>-->
-        <!--<dd class="invisible">The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916.</dd>-->
-
-        <!--<dt>What is the largest national park site?</dt>-->
-        <!--<dd class="invisible">Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres</dd>-->
-
-        <!--<dt>What is the smallest national park site?</dt>-->
-        <!--<dd class="invisible">Thaddeus Kosciuszko National Memorial, PA, at 0.02 acres</dd>-->
-
-        <!--<dt>How many areas are in the National Park System?</dt>-->
-        <!--<dd class="invisible">The system includes 419 areas covering more than 85 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands.</dd>-->
-
-        <!--<dt>How many people visit the national parks?</dt>-->
-        <!--<dd class="invisible">Total recreation visitors to the national parks in 2018: 318,211,833.</dd>-->
-
-        <!--<dt>Can I bring my pet to a national park?</dt>-->
-        <!--<dd class="invisible">Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities. Learn more about pets in parks.</dd>-->
-
-        <!--<dt>How do I apply for a job with the National Park Service?</dt>-->
-        <!--<dd class="invisible">National Park Service jobs, including both permanent and seasonal positions, are listed on USAJOBs. Learn more about working for us, including opportunities for students and volunteers and tips for applying for jobs.</dd>-->
-    <!--</dl>-->
-
-<!--JQuery-->
 <script src="js/jquery-2.2.4.js"></script>
-<!--Custom JavaScript-->
-    <script>
-        $('span').click(function (e) {
-            $('div').slideUp(3000);
+<script>
+    "use strict";
+    $(document).ready(function(){
+        $('#toggle').click(function(e){
+            $('dd').toggleClass('invisible');
         });
-
-
-        $('.hidden').delay(8000).fadeIn(5000, function () {}).css('text-align', 'center');
-
-
-    </script>
+        $('dt').click(function(e){
+            $(this).addClass('highlight');
+        });
+        $('#last-thing').click(function(e){
+            $('ul').each(function(index, element){
+                $(element).children().last().css('background-color', 'yellow');
+            });
+        });
+        $('h3').click(function(e){
+            $(this).next().children()
+                .css('font-weight', 'bold')
+                .slideToggle();
+        });
+        $('li').click(function(e){
+            $(this).parent().children().first().css('color', 'blue');
+        });
+        $("#x").click(function(e) {
+            $("#newsletter-cta").hide();
+        });
+        $("h2").delay(8000).fadeIn();
+    });
+</script>
 </body>
 </html>

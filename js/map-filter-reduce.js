@@ -35,3 +35,36 @@ const users = [
         yearsOfExperience: 9
     }
 ];
+
+const usersThreeOrMoreLanguages = users.filter((user) => {
+    return user.languages.length >= 3;
+});
+
+const userEmails = users.map((user) => {
+    return user.email;
+});
+
+const totalExperience = users.reduce((totalExp, user) => totalExp + user.yearsOfExperience, 0);
+
+const longestEmail = users.reduce((longestEmail, user) => {
+    if (user.email.length >= longestEmail.length) {
+        longestEmail = user.email;
+    }
+    return longestEmail;
+}, '');
+
+// console.log(longestEmail);
+
+const longestEmailTernary = users.reduce((longestEmail, user) => user.email.length >= longestEmail.length ? user.email : longestEmail, "");
+
+// console.log(longestEmailTernary);
+
+// TODO: Use reduce to get the list of user's names in a single string. Example: 'Your instructors are: ryan, luis, zach, fernando, justin.'
+
+const yourInstructors = users.reduce((sentence, user) => {
+    if (user.id === users.length){
+        return sentence + user.name + ".";
+    } else {
+        return sentence + user.name + ", ";
+    }
+}, "Your instructors are: ");
